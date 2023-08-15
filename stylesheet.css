@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: black;
+    color: green;
+}
+
+.navbardesktop{
+    z-index: 10;
+    transition: all .5s;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbardesktop ul{
+    display: flex;
+}
+
+.navbardesktop ul li{
+    cursor: pointer;
+    transition: all .5s;
+    margin: 2rem;
+    color: whitesmoke;
+    list-style: none;
+    opacity: .75;
+    text-shadow: 1px 1px 10px black;
+    font-size: 1.25rem;
+    letter-spacing: -1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbardesktop ul li:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.hero{
+    z-index: 1;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://cdn-dbmhp.nitrocdn.com/pvUtXMQmfWjFDzNcWiyzrSUQQhMJejlK/assets/static/optimized/rev-53f4789/wp-content/uploads/slider/cache/b5c57eb188c5b90fbf9f4f4971c7402e/exotic-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.herotext{
+    margin: 5vw;
+}
+
+.hero h1{
+    font-size: 7rem;
+    transform: scale(1,1.1);
+    letter-spacing: -.5vw;
+    color: whitesmoke;
+    text-shadow: 1px 1px 10px black;
+}
+
+.hero p{
+    font-size: 1rem;
+    transform: scale(1,1.1);
+    color: whitesmoke;
+    text-shadow: 1px 1px 10px black;
+}
+
+.banner{
+    position: relative;
+    height: 20rem;
+    background-color: white;
+}
+
+.bannercontent{
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+
+.card{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 25%;
+    height: 10rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+.card img{
+    height: 30%;
+    width: auto;
+    margin: .5vw;
+}
+
+.card h2{
+    transform: scale(1,1.1);
+    margin: .5vw;
+    font-weight: bold;
+}
+
+.card p{
+    width: 50%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.about{
+    transition: all .5s;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/440/597/large_2x/bearded-dragon-on-a-black-background-free-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.textarea{
+    width: 40%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    box-shadow: 0px 0px 10px black;
+}
+
+.textarea h2{
+    color: whitesmoke;
+    font-size: 5vw;
+    transform: scale(1,1.2);
+    letter-spacing: -.5vw;
+}
+
+.textarea p{
+    text-shadow: 1px 1px 10px grey;
+    margin: 1rem;
+    width: 50%;
+    font-size: 1vw;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.textarea button{
+    cursor: pointer;
+    transition: all .5s;
+    padding: .75vw;
+    margin: 2vw;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3%;
+    box-shadow: 0px 0px 10px rgb(172, 172, 172);
+    font-size: 1vw;
+}
+
+.textarea button:hover{
+    transform: translateY(-.15rem);
+    box-shadow: 0px 1px 15px rgb(255, 255, 255);
+}
+
+.bgiconcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bgicon{
+    transition: all .5s;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 1rem;
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+.bgicon:first-child {
+    opacity: 1;
+    background-color: green;
+    box-shadow: 0px 0px 10px black;
+  }
+
+
+.bgicon:hover{
+    opacity: 1;
+}
+
+.backgroundblur{
+    width: 100%;
+    height: 100%;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.services h2{
+    margin: 2vw;
+    font-size: 3.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: -.4vw;
+}
+
+.servicescontainer{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.servicescard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 90%;
+    width: 22.5%;
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+}
+
+.servicescard h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+}
+
+.servicescard p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    width: 50%;
+}
